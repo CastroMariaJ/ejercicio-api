@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>Bienvenido a la Pokedex</h1>
+    <p>Consulta información de Pokémon usando la API de PokeAPI.</p>
+
+   
+
+    <section class="grid">
+      <div class="card">
+        <h2>Listar Pokemon</h2>
+
+        <label>POKEMON</label>
+        <input type="text" id="name"  />
+
+       
+
+        <button onclick="listarPokemon()">Consultar</button>
+      </div>
+
+      <div class="card">
+        <h2>HABILIDAD POKEMON</h2>
+
+        <label>Habilidad</label>
+        <input type="text" id="ability" />
+
+        <button onclick="verificarHabilidad()">Verificar</button>
+      </div>
+
+      <div class="card">
+        <h2>GENERACION POKEMON</h2>
+
+        <label>Generación</label>
+        <input type="text" id="generation" />
+
+        <button onclick="verificarGeneracion()">Consultar</button>
+      </div>
+
+      
+    </section>
+
+    <section class="card">
+      <h2>Resultado</h2>
+      <div id="resultado" class="resultado">
+        Aquí aparecerán los resultados.
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
